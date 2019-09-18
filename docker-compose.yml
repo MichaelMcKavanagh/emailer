@@ -13,10 +13,15 @@ services:
   email-mailgun-service:
     extends: base
     command: node services/email-mailgun-service.js
+    environment:
+      MAILGUN_API_KEY=${MAILGUN_API_KEY}
+      MAILGUN_DOMAIN=${MAILGUN_DOMAIN}
 
   email-sendinblue-service:
     extends: base
     command: node services/email-sendinblue-service.js
+    environment:
+      SENDINBLUE_V2_API_KEY=${SENDINBLUE_V2_API_KEY}
 
   logger-service:
     extends: base
