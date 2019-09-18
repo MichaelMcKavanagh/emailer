@@ -2,7 +2,7 @@
 
 Microservices demo
 
-There is an exposed api (POST http://localhost/email) to send an email.  Under the hood, two different private microservices respond to email requests, each using a different email service for extra reliability.
+There is an exposed api (POST /email) to send an email.  Under the hood, two different private microservices respond to email requests, each using a different email service for extra reliability.
 
 
 ## API
