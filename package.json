@@ -1,0 +1,33 @@
+{
+  "name": "emailer",
+  "version": "1.0.0",
+  "description": "Email Microservice demonstration",
+  "author": "Michael McKavanagh",
+  "license": "ISC",
+  "scripts": {
+    "test": "ava ./test/unit --verbose --timeout=5000",
+    "test:integration": "ava ./test/integration --verbose --timeout=5000"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/MichaelMcKavanagh/emailer.git"
+  },
+  "keywords": [
+    "email",
+    "service",
+    "api",
+    "microservice",
+    "docker-compose"
+  ],
+  "dependencies": {
+    "axios": "^0.19.0",
+    "cote": "^0.20.1",
+    "express": "^4.16.4",
+    "mailgun-js": "^0.22.0",
+    "sendinblue-api": "^1.0.8",
+    "winston": "^3.1.0"
+  },
+  "devDependencies": {
+    "ava": "^1.0.1"
+  }
+}

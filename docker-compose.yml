@@ -1,0 +1,23 @@
+version: '2'
+services:
+  base:
+    build: .
+    restart: on-failure
+
+  emailer:
+    extends: base
+    command: node emailer/server.js
+    ports:
+      - 80:5000
+
+  email-mailgun-service:
+    extends: base
+    command: node services/email-mailgun-service.js
+
+  email-sendinblue-service:
+    extends: base
+    command: node services/email-sendinblue-service.js
+
+  logger-service:
+    extends: base
+    command: node services/logger-service.js
