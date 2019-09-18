@@ -29,6 +29,15 @@ cd emailer
 npm install
 ```
 
+## Environment variables
+Make sure you have the following environment variables set:
+```
+MAILGUN_API_KEY
+MAILGUN_DOMAIN
+SENDINBLUE_V2_API_KEY
+```
+
+
 ## Docker
 
 For a single instance of each service you can just do:
@@ -63,6 +72,11 @@ npm run test:integration
 ## Logging
 
 Unified logging files (`error.log` and `combined.log`) are available within the logger service, but currently you'll have to exec into the service to see them.
+
+
+## Deployment
+
+Currently the way to deploy the app is just to have docker-compose up running on the server with the appropriate environment variables set, and have port 80 publically exposed.
 
 # Author
 
