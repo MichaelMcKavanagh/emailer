@@ -5,8 +5,8 @@
   "author": "Michael McKavanagh",
   "license": "ISC",
   "scripts": {
-    "test": "ava ./test/unit --verbose --timeout=5000",
-    "test:integration": "ava ./test/integration --verbose --timeout=5000"
+    "test": "ava ./test/unit --verbose --timeout=10000",
+    "test:integration": "ava ./test/integration --verbose --timeout=10000"
   },
   "repository": {
     "type": "git",

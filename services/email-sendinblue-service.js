@@ -2,7 +2,7 @@ const cote = require('cote');
 const constants = require('../emailer/constants');
 var sendinblue = require('sendinblue-api');
 
-var parameters = { apiKey: constants.SENDINBLUE_V2_API_KEY };
+var parameters = { apiKey: process.env.SENDINBLUE_V2_API_KEY };
 var sendinObj = new sendinblue(parameters);
 
 var emailResponder = new cote.Responder({

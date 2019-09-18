@@ -3,7 +3,7 @@ const mailgun = require('mailgun-js');  // https://documentation.mailgun.com/en/
 
 const constants = require('../emailer/constants');
 
-const mg = mailgun({apiKey: constants.MAILGUN_API_KEY, domain: constants.MAILGUN_DOMAIN});
+const mg = mailgun({apiKey: process.env.MAILGUN_API_KEY, domain: process.env.MAILGUN_DOMAIN});
 
 const emailResponder = new cote.Responder({
 	name: 'email mailgun requester',

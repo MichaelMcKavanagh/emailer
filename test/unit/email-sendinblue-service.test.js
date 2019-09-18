@@ -1,8 +1,8 @@
 import test from 'ava';
 import cote from 'cote';
 
-const emailService = require('../../services/email-sendinblue-service');
 const constants = require('../../emailer/constants');
+const emailSendinblueService = require('../../services/email-sendinblue-service');
 
 test('automatic pass', t => {
 	t.pass();
