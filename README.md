@@ -64,14 +64,6 @@ npm run test:integration
 
 Unified logging files (`error.log` and `combined.log`) are available within the logger service, but currently you'll have to exec into the service to see them.
 
-## Localhost
-
-Quick verification check (note, multiple calls will result in api returing some emails from companyA, and some from companyB):
-
-```
-http://localhost/email
-```
-
 # Author
 
 Michael McKavanagh <michaelmckavanagh@gmail.com>
